@@ -14,12 +14,13 @@ class GetPrograms:
     print(soup.prettify())
 
     # Find the script tag containing the JSON data
-    script_tag = soup.find('script', {'type': 'application/json'})
+    # script_tag = soup.find('script', {'type': 'application/json'})
 
     # Extract and parse the JSON data
-    json_data = json.loads(script_tag.string)
+    # json_data = json.loads(script_tag.string)
 
-    return json_data
+    # return json_data
 
 programs = GetPrograms().get_programs()
-print(programs)
+# print(programs)
+
